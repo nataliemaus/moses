@@ -274,7 +274,7 @@ nvidia-docker run -it --name moses --network="host" --shm-size 10G molecularsets
 docker exec -it molecularsets/moses bash
 ```
 
-### Manually
+### Manually       #here! 
 Alternatively, install dependencies and MOSES manually.
 
 1. Clone the repository:
@@ -287,7 +287,7 @@ git clone https://github.com/molecularsets/moses.git
 
 3. Install MOSES:
 ```bash
-python setup.py install
+python3 setup.py install
 ```
 
 4. (Optional) Install dependencies for LatentGAN:
@@ -340,7 +340,9 @@ metrics = moses.get_all_metrics(list_of_generated_smiles)
 
 # Reproducing the baselines
 
-### End-to-End launch
+### End-to-End launch   #here2 
+
+## python3 scripts/run.py --device cpu --model vae
 
 You can run pretty much everything with:
 ```bash
